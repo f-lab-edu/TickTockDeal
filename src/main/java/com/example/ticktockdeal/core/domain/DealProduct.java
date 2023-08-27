@@ -48,4 +48,8 @@ public class DealProduct {
 
         return product;
     }
+
+    public void decreaseStock(Integer stock) {
+        this.stock = this.stock - stock;
+    }
 }
