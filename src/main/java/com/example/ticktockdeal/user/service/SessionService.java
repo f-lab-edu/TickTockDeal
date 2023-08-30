@@ -75,6 +75,10 @@ public class SessionService {
     public void logoutUser() {
         httpSession.removeAttribute(LOGIN_SESSION);
     }
+
+    public String getUserId() {
+        return (String)httpSession.getAttribute(LOGIN_SESSION);
+    }
 }
 
 
